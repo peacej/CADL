@@ -8,8 +8,9 @@ __pycache__
 .Ruserdata
 .DS_Store
 .hdf5
-.data*
-.png
+*.data*
+*.png
+*.index*
 **/.data*
 **/.png
 **/.DS_Store

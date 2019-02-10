@@ -381,6 +381,9 @@ def train_vae(files,
                     ae['y'], feed_dict={ae['x']: test_xs,
                                         ae['train']: False,
                                         ae['keep_prob']: 1.0})
+                print('shape of recon is {}'.format(type(recon)), flush=True)
+                print(recon, flush=True)
+                raise ValueError('manual force-stop')
                 print('reconstruction (min, max, mean):',
                     recon.min(), recon.max(), recon.mean())
                 utils.montage(recon.reshape([-1] + crop_shape),
